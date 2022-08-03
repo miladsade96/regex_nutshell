@@ -32,3 +32,12 @@ Mr. T
 '''
 
 sentence = 'Start a sentence and then bring it to an end'
+
+# Example 1:
+pattern = re.compile(r'abc')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(match)
+print(text_to_search[1:4])
+
+# ----------------------------------------------------------------------------------
