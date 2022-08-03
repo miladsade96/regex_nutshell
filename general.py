@@ -63,3 +63,13 @@ for match in matches:
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
+
+# Example 4:
+print("Example 4:")
+pattern = re.compile(r'elns\.info')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match: {match},   In text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 85)
+# ----------------------------------------------------------------------------------
