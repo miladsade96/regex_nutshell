@@ -38,7 +38,7 @@ print("Example 1:")
 pattern = re.compile(r'abc')
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(f"Match: {match},   In text: {text_to_search[match.start():match.end()]}")
+    print(f"Match span indexes: {match.span()},   In text real character: {text_to_search[match.start():match.end()]}")
 
 
 print("*" * 85)
@@ -49,7 +49,7 @@ print("Example 2:")
 pattern = re.compile(r'abc', re.IGNORECASE)
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(f"Match: {match},   In text: {text_to_search[match.start():match.end()]}")
+    print(f"Match span indexes: {match.span()},   In text real character: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -59,7 +59,7 @@ print("Example 3:")
 pattern = re.compile(r'\.')
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(f"Match: {match},   In text: {text_to_search[match.start():match.end()]}")
+    print(f"Match span indexes: {match.span()},   In text real character: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -69,7 +69,7 @@ print("Example 4:")
 pattern = re.compile(r'elns\.info')
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(f"Match: {match},   In text: {text_to_search[match.start():match.end()]}")
+    print(f"Match span indexes: {match.span()},   In text real character: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
