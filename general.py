@@ -110,3 +110,14 @@ for match in matches:
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
+
+# Example 8: \w --> Word character (a-z) (A-Z) (0-9) _
+print("Example 8: \w --> Word character (a-z) (A-Z) (0-9) _")
+pattern = re.compile(r'\w')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {text_to_search[match.start():match.end()]}")
+
+print("*" * 85)
+# ----------------------------------------------------------------------------------
