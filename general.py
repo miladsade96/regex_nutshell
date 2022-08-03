@@ -5,3 +5,5 @@
     All of these are based on the Python re module.
     Author: Milad Sadeghi DM - EverLookNeverSee@GitHub
 """
+
+import re
