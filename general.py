@@ -38,7 +38,8 @@ print("Example 1:")
 pattern = re.compile(r'abc')
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(f"Match span indexes: {match.span()},   In text real character: {text_to_search[match.start():match.end()]}")
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {text_to_search[match.start():match.end()]}")
 
 
 print("*" * 85)
@@ -49,7 +50,8 @@ print("Example 2:")
 pattern = re.compile(r'abc', re.IGNORECASE)
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(f"Match span indexes: {match.span()},   In text real character: {text_to_search[match.start():match.end()]}")
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -59,7 +61,8 @@ print("Example 3:")
 pattern = re.compile(r'\.')
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(f"Match span indexes: {match.span()},   In text real character: {text_to_search[match.start():match.end()]}")
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -69,7 +72,8 @@ print("Example 4:")
 pattern = re.compile(r'elns\.info')
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(f"Match span indexes: {match.span()},   In text real character: {text_to_search[match.start():match.end()]}")
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -79,7 +83,19 @@ print("Example 5: . --> Any character except newline")
 pattern = re.compile(r'.')
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(f"Match span indexes: {match.span()},   In text real character: {text_to_search[match.start():match.end()]}")
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {text_to_search[match.start():match.end()]}")
+
+print("*" * 85)
+# ----------------------------------------------------------------------------------
+
+# Example 6: \d --> Digit (0-9)
+print("Example 5: \d --> Digit (0-9)")
+pattern = re.compile(r'\d')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
