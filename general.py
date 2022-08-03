@@ -90,8 +90,19 @@ print("*" * 85)
 # ----------------------------------------------------------------------------------
 
 # Example 6: \d --> Digit (0-9)
-print("Example 5: \d --> Digit (0-9)")
+print("Example 6: \d --> Digit (0-9)")
 pattern = re.compile(r'\d')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {text_to_search[match.start():match.end()]}")
+
+print("*" * 85)
+# ----------------------------------------------------------------------------------
+
+# Example 7: \D --> Not a digit (0-9)
+print("Example 7: \D --> Not a digit (0-9)")
+pattern = re.compile(r'\D')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
