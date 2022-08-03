@@ -143,3 +143,14 @@ for match in matches:
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
+
+# Example 11: \S --> Not whitespace (space, tab, newline)
+print("Example 11: \S --> Not whitespace (space, tab, newline)")
+pattern = re.compile(r'\S')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {text_to_search[match.start():match.end()]}")
+
+print("*" * 85)
+# ----------------------------------------------------------------------------------
