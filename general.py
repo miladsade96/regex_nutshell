@@ -34,28 +34,32 @@ Mr. T
 sentence = 'Start a sentence and then bring it to an end'
 
 # Example 1:
+print("Example 1:")
 pattern = re.compile(r'abc')
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(match)
-print(text_to_search[1:4])
+    print(f"Match: {match},   In text: {text_to_search[match.start():match.end()]}")
 
+
+print("*" * 85)
 # ----------------------------------------------------------------------------------
 
 # Example 2:
+print("Example 2:")
 pattern = re.compile(r'abc', re.IGNORECASE)
 matches = pattern.finditer(text_to_search)
 for match in matches:
-    print(match)
-print(text_to_search[1:4])
-print(text_to_search[28:31])
+    print(f"Match: {match},   In text: {text_to_search[match.start():match.end()]}")
 
+print("*" * 85)
 # ----------------------------------------------------------------------------------
 
 # Example 3:
+print("Example 3:")
 pattern = re.compile(r'\.')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match: {match},   In text: {text_to_search[match.start():match.end()]}")
 
+print("*" * 85)
 # ----------------------------------------------------------------------------------
