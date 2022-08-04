@@ -23,6 +23,7 @@ elns.info
 
 321-555-4321
 123.555.1234
+123*555*1234
 
 Mr. Sadeghi
 Mr Smith
@@ -209,6 +210,17 @@ print("*" * 85)
 # Example 16: Finding phone numbers.
 print("Example 16: Finding phone numbers.")
 pattern = re.compile(r'\d\d\d.\d\d\d.\d\d\d\d')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 85)
+# ----------------------------------------------------------------------------------
+
+# Example 17: Finding phone numbers using character set.
+print("Example 17: Finding phone numbers using character set.")
+pattern = re.compile(r'\d\d\d[-.]\d\d\d[-.]\d\d\d\d')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
