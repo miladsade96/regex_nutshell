@@ -39,7 +39,7 @@ pattern = re.compile(r'abc')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 
 print("*" * 85)
@@ -51,7 +51,7 @@ pattern = re.compile(r'abc', re.IGNORECASE)
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -62,7 +62,7 @@ pattern = re.compile(r'\.')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -73,7 +73,7 @@ pattern = re.compile(r'elns\.info')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -84,7 +84,7 @@ pattern = re.compile(r'.')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -95,7 +95,7 @@ pattern = re.compile(r'\d')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -106,7 +106,7 @@ pattern = re.compile(r'\D')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -117,7 +117,7 @@ pattern = re.compile(r'\w')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -128,7 +128,7 @@ pattern = re.compile(r'\W')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -139,7 +139,7 @@ pattern = re.compile(r'\s')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ pattern = re.compile(r'\S')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -168,7 +168,7 @@ pattern = re.compile(r'\bHa')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -179,7 +179,7 @@ pattern = re.compile(r'\BHa')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {text_to_search[match.start():match.end()]}")
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -190,7 +190,7 @@ pattern = re.compile(r'^Start')
 matches = pattern.finditer(sentence)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {sentence[match.start():match.end()]}")
+          f"Found characters in text: {sentence[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
@@ -201,7 +201,7 @@ pattern = re.compile(r'end$')
 matches = pattern.finditer(sentence)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
-          f"In text real character: {sentence[match.start():match.end()]}")
+          f"Found characters in text: {sentence[match.start():match.end()]}")
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
