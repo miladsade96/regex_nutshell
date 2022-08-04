@@ -16,6 +16,13 @@ Milad Sadeghi DM - [EverLookneverSee@GitHub](https://elns.info)
 * Example 9: \W --> Non-Word character --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/bc9cf8bcd09c002b0795649632cc2e4b5e5d65b8/general.py#L125-L133)
 * Example 10: \s --> Whitespace character (space, tab, newline) --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/bc9cf8bcd09c002b0795649632cc2e4b5e5d65b8/general.py#L136-L144)
 * Example 11: \S --> Non-Whitespace character --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/bc9cf8bcd09c002b0795649632cc2e4b5e5d65b8/general.py#L147-L155)
+* Example 12: \b --> Word boundary --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e346aacce8593da21630351bb0fcd2e1f923b2ee/general.py#L161-L176)
+* Example 13: \B --> Non-Word boundary --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e346aacce8593da21630351bb0fcd2e1f923b2ee/general.py#L179-L187)
+* Example 14: ^ --> Beginning of a string --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e346aacce8593da21630351bb0fcd2e1f923b2ee/general.py#L190-L198)
+* Example 15: $ --> End of a string --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e346aacce8593da21630351bb0fcd2e1f923b2ee/general.py#L201-L209)
+* Example 16: \d\d\d.\d\d\d.\d\d\d\d --> Finding phone numbers --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e346aacce8593da21630351bb0fcd2e1f923b2ee/general.py#L212-L220)
+* Example 17: \d\d\d[-.]\d\d\d[-.]\d\d\d\d --> Finding phone numbers using character set-1 --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e346aacce8593da21630351bb0fcd2e1f923b2ee/general.py#L223-L231)
+* Example 18: [89]00[-.]\d\d\d[-.]\d\d\d\d --> Finding phone numbers using character set-2 --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e346aacce8593da21630351bb0fcd2e1f923b2ee/general.py#L234-L243)
 
 
 #### Work in Progress ...
