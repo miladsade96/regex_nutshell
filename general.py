@@ -183,3 +183,14 @@ for match in matches:
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
+
+# Example 14: ^ --> The beginning of a string.
+print("Example 14: ^ --> The beginning of a string.")
+pattern = re.compile(r'^Start')
+matches = pattern.finditer(sentence)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {sentence[match.start():match.end()]}")
+
+print("*" * 85)
+# ----------------------------------------------------------------------------------
