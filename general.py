@@ -154,3 +154,21 @@ for match in matches:
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
+
+# Example 12: \b --> Word boundary.
+"""
+    There are three different positions that qualify as word boundaries:
+    1. Before the first character in the string, if the first character is a word character.
+    2. After the last character in the string, if the last character is a word character.
+    3. Between two characters in the string, where one is a word character and the other
+        is not a word character.
+"""
+print("Example 12: \b --> Word boundary.")
+pattern = re.compile(r'\bHa')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"In text real character: {text_to_search[match.start():match.end()]}")
+
+print("*" * 85)
+# ----------------------------------------------------------------------------------
