@@ -205,3 +205,14 @@ for match in matches:
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
+
+# Example 16: Finding phone numbers.
+print("Example 16: Finding phone numbers.")
+pattern = re.compile(r'\d\d\d.\d\d\d.\d\d\d\d')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 85)
+# ----------------------------------------------------------------------------------
