@@ -32,6 +32,11 @@ Mr Smith
 Ms Davis
 Mrs. Robinson
 Mr. T
+
+cat
+mat
+pat
+bat
 '''
 
 sentence = 'Start a sentence and then bring it to an end'
@@ -290,6 +295,17 @@ print("*" * 65)
 # Example 23: Negate all lowercase and uppercase alphabet characters.
 print("Example 23: Negate all lowercase and uppercase alphabet characters.")
 pattern = re.compile(r'[^a-zA-Z]')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 65)
+# ----------------------------------------------------------------------------------
+
+# Example 24: Finding cat mat pat except bat.
+print("Example 24: Finding cat mat pat except bat.")
+pattern = re.compile(r'[^b]at')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
