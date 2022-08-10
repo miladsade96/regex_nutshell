@@ -264,3 +264,14 @@ for match in matches:
 
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Example 21: Finding all uppercase alphabet characters.
+print("Example 21: Finding all uppercase alphabet characters.")
+pattern = re.compile(r'[A-Z]')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 65)
+# ----------------------------------------------------------------------------------
