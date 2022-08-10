@@ -332,3 +332,14 @@ for match in matches:
 
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Example 26: Finding all Mr and following names.
+print("Example 26: Finding all Mr and following names.")
+pattern = re.compile(r'Mr\.?\s[A-Z]\w*')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 65)
+# ----------------------------------------------------------------------------------
