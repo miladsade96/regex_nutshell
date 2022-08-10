@@ -242,3 +242,14 @@ for match in matches:
 
 print("*" * 85)
 # ----------------------------------------------------------------------------------
+
+# Example 19: Finding all digits between 1 and 5.
+print("Example 19: Finding all digits between 1 and 5.")
+pattern = re.compile(r'[1-5]')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 85)
+# ----------------------------------------------------------------------------------
