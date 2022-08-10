@@ -23,6 +23,14 @@ Milad Sadeghi DM - [EverLookneverSee@GitHub](https://elns.info)
 * Example 16: \d\d\d.\d\d\d.\d\d\d\d --> Finding phone numbers --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e346aacce8593da21630351bb0fcd2e1f923b2ee/general.py#L212-L220)
 * Example 17: \d\d\d[-.]\d\d\d[-.]\d\d\d\d --> Finding phone numbers using character set-1 --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e346aacce8593da21630351bb0fcd2e1f923b2ee/general.py#L223-L231)
 * Example 18: [89]00[-.]\d\d\d[-.]\d\d\d\d --> Finding phone numbers using character set-2 --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e346aacce8593da21630351bb0fcd2e1f923b2ee/general.py#L234-L243)
+* Example 19: [1-5] --> Finding all digits between 1 and 5 --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L251-L259)
+* Example 20: [a-z] --> Finding all lowercase letters --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L262-L270)
+* Example 21: [A-Z] --> Finding all uppercase letters --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L273-L281)
+* Example 22: [a-zA-Z] --> Finding all letters --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L284-L292)
+* Example 23: [^a-zA-Z] --> Finding all non-letters --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L295-L303)
+* Example 24: [^b]at --> Finding cat mat pat except bat --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L306-L314)
+* Example 25: \d{3}.\d{3}.\d{4} --> Finding phone numbers using quantifiers --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L317-L333)
+* Example 26: Mr\.?\s[A-Z]\w* --> Finding all Mr and following names --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L336-L344)
 
 
 #### Work in Progress ...
