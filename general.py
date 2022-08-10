@@ -313,3 +313,22 @@ for match in matches:
 
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Quantifiers:
+# * --> Zero or more times.
+# + --> One or more times.
+# ? --> Zero or one times.
+# {n} --> Exactly n times.
+# {n,} --> n or more times.
+# {n,m} --> n to m times.
+
+# Example 25: Finding phone numbers using quantifiers.
+print("Example 25: Finding phone numbers using quantifiers.")
+pattern = re.compile(r'\d{3}.\d{3}.\d{4}')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 65)
+# ----------------------------------------------------------------------------------
