@@ -45,7 +45,7 @@ for match in matches:
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 2:
@@ -56,7 +56,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 3:
@@ -67,7 +67,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 4:
@@ -78,7 +78,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 5: . --> Any character except newline
@@ -89,7 +89,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 6: \d --> Digit (0-9)
@@ -100,7 +100,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 7: \D --> Not a digit (0-9)
@@ -111,7 +111,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 8: \w --> Word character (a-z) (A-Z) (0-9) _
@@ -122,7 +122,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 9: \W --> Not a word character
@@ -133,7 +133,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 10: \s --> Whitespace (space, tab, newline)
@@ -144,7 +144,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 11: \S --> Not whitespace (space, tab, newline)
@@ -155,7 +155,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 12: \b --> Word boundary.
@@ -173,7 +173,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 13: \B --> Not a word boundary.
@@ -184,7 +184,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 14: ^ --> The beginning of a string.
@@ -195,7 +195,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {sentence[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 15: $ --> The end of a string.
@@ -206,7 +206,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {sentence[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 16: Finding phone numbers.
@@ -217,7 +217,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 17: Finding phone numbers using character set.
@@ -228,7 +228,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 18: Finding phone numbers using character set.
@@ -240,7 +240,7 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
 
 # Example 19: Finding all digits between 1 and 5.
@@ -251,5 +251,5 @@ for match in matches:
     print(f"Match span indexes: {match.span()},   "
           f"Found characters in text: {text_to_search[match.start():match.end()]}")
 
-print("*" * 85)
+print("*" * 65)
 # ----------------------------------------------------------------------------------
