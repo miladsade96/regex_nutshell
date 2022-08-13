@@ -31,6 +31,9 @@ Milad Sadeghi DM - [EverLookneverSee@GitHub](https://elns.info)
 * Example 24: [^b]at --> Finding cat mat pat except bat --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L306-L314)
 * Example 25: \d{3}.\d{3}.\d{4} --> Finding phone numbers using quantifiers --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L317-L333)
 * Example 26: Mr\.?\s[A-Z]\w* --> Finding all Mr and following names --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/5d9329631d77e1701098640d79d843cfb7ea8d0a/general.py#L336-L344)
+* Example 27 - v1: M(r|s|rs)\.?\s[A-Z]\w* --> Finding all Mr,Ms, Mrs and following names using grouping feature --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/716bed781e4dd3572e99311fd952ba882d4ef6f3/general.py#L351-L359)
+* Example 27 - v2: (Mr|Ms|Mrs)\.?\s[A-Z]\w* --> Finding all Mr,Ms, Mrs and following names using grouping feature --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/716bed781e4dd3572e99311fd952ba882d4ef6f3/general.py#L362-L370)
+* Example 28: [a-zA-Z0-9.-]+@[a-zA-Z-]+\.(com|net|edu) --> Fining all email addresses that are located in text --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/716bed781e4dd3572e99311fd952ba882d4ef6f3/general.py#L373-L381)
 
 
 #### Work in Progress ...
