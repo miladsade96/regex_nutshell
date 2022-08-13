@@ -37,6 +37,10 @@ cat
 mat
 pat
 bat
+
+MiladDSadeghi@gmail.com
+milad.sadeghi@university.edu
+milad-123-sadeghi@my-job.net
 '''
 
 sentence = 'Start a sentence and then bring it to an end'
