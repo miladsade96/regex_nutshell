@@ -38,7 +38,7 @@ mat
 pat
 bat
 
-MiladDSadeghi@gmail.com
+MiladSadeghiDM@gmail.com
 milad.sadeghi@university.edu
 milad-123-sadeghi@my-job.net
 '''
@@ -362,6 +362,17 @@ print("*" * 65)
 # Example 27 - v2: Finding all Mr,Ms, Mrs and following names using grouping feature.
 print("Example 27 - v2: Finding all Mr,Ms, Mrs and following names using grouping feature.")
 pattern = re.compile(r'(Mr|Ms|Mrs)\.?\s[A-Z]\w*')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 65)
+# ----------------------------------------------------------------------------------
+
+# Example 28: Fining all email addresses that are located in text.
+print("Example 28: Fining all email addresses that are located in text.")
+pattern = re.compile(r'[a-zA-Z0-9.-]+@[a-zA-Z-]+\.(com|net|edu)')
 matches = pattern.finditer(text_to_search)
 for match in matches:
     print(f"Match span indexes: {match.span()},   "
