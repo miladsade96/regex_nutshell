@@ -343,3 +343,14 @@ for match in matches:
 
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Example 27 - v1: Finding all Mr,Ms, Mrs and following names using grouping feature.
+print("Example 27 - v1: Finding all Mr,Ms, Mrs and following names using grouping feature.")
+pattern = re.compile(r'M(r|s|rs)\.?\s[A-Z]\w*')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 65)
+# ----------------------------------------------------------------------------------
