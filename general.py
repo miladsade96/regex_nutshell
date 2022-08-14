@@ -449,3 +449,11 @@ matches = pattern.match(sentence)
 print(matches)
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Example 35: Using search method in order to search entire of the string.
+print("Example 35: Using search method in order to search entire of the string.")
+pattern = re.compile(r'sentence')
+matches = pattern.search(sentence)
+print(matches)
+print("*" * 65)
+# ----------------------------------------------------------------------------------
