@@ -441,3 +441,11 @@ for match in matches:
     print(f"Group_0: {match[0]}     group_1: {match[1]}     group_2: {match[2]}")
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Example 34: Using match method in order to match the beginning of the string.
+print("Example 34: Using match method in order to match the beginning of the string.")
+pattern = re.compile(r'Start')
+matches = pattern.findall(sentence)
+print(matches)
+print("*" * 65)
+# ----------------------------------------------------------------------------------
