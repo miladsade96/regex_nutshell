@@ -41,6 +41,11 @@ bat
 MiladSadeghiDM@gmail.com
 milad.sadeghi@university.edu
 milad-123-sadeghi@my-job.net
+
+https://www.google.com
+http://www.udacity.com
+https://elns.info
+https://www.nasa.gov
 '''
 
 sentence = 'Start a sentence and then bring it to an end'
