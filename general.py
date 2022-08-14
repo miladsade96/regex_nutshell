@@ -432,3 +432,12 @@ for match in matches:
     print(f"Match span indexes: {match}")
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Example 33: Using group in findall method.
+print("Example 33: Using group in findall method.")
+pattern = re.compile(r'https?://(www\.)?(\w+)(\.\w+)')
+matches = pattern.findall(text_to_search)
+for match in matches:
+    print(f"Group_0: {match[0]}     group_1: {match[1]}     group_2: {match[2]}")
+print("*" * 65)
+# ----------------------------------------------------------------------------------
