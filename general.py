@@ -423,3 +423,12 @@ subbed_urls = pattern.sub(r'\2\3', urls)
 print(subbed_urls)
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Example 32: Using findall to find all urls in text.
+print("Example 32: Using findall to find all urls in text.")
+pattern = re.compile(r'https?://(www\.)?(\w+)(\.\w+)')
+matches = pattern.findall(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match}")
+print("*" * 65)
+# ----------------------------------------------------------------------------------
