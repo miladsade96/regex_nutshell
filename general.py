@@ -48,6 +48,13 @@ https://elns.info
 https://www.nasa.gov
 '''
 
+urls = """
+https://www.google.com
+http://www.udacity.com
+https://elns.info
+https://www.nasa.gov
+"""
+
 sentence = 'Start a sentence and then bring it to an end'
 
 # Example 1:
@@ -406,5 +413,13 @@ for match in matches:
           f"group_0: {match.group(0)}     group_1: {match.group(1)}     group_2: {match.group(2)}"
           f"     group_3: {match.group(3)}")
 
+print("*" * 65)
+# ----------------------------------------------------------------------------------
+
+# Example 31: Reformatting the text using substitution.
+print("Example 31: Reformatting the text using substitution.")
+pattern = re.compile(r'https?://(www\.)?(\w+)(\.\w+)')
+subbed_urls = pattern.sub(r'\2\3', urls)
+print(subbed_urls)
 print("*" * 65)
 # ----------------------------------------------------------------------------------
