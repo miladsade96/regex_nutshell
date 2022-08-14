@@ -457,3 +457,11 @@ matches = pattern.search(sentence)
 print(matches)
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Example 36: Using ignore case flag.
+print("Example 36: Using ignore case flag.")
+pattern = re.compile(r'start', re.IGNORECASE)
+matches = pattern.search(sentence)
+print(matches)
+print("*" * 65)
+# ----------------------------------------------------------------------------------
