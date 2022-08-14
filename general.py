@@ -445,7 +445,7 @@ print("*" * 65)
 # Example 34: Using match method in order to match the beginning of the string.
 print("Example 34: Using match method in order to match the beginning of the string.")
 pattern = re.compile(r'Start')
-matches = pattern.findall(sentence)
+matches = pattern.match(sentence)
 print(matches)
 print("*" * 65)
 # ----------------------------------------------------------------------------------
