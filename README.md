@@ -34,6 +34,11 @@ Milad Sadeghi DM - [EverLookneverSee@GitHub](https://elns.info)
 * Example 27 - v1: M(r|s|rs)\.?\s[A-Z]\w* --> Finding all Mr,Ms, Mrs and following names using grouping feature --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/716bed781e4dd3572e99311fd952ba882d4ef6f3/general.py#L351-L359)
 * Example 27 - v2: (Mr|Ms|Mrs)\.?\s[A-Z]\w* --> Finding all Mr,Ms, Mrs and following names using grouping feature --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/716bed781e4dd3572e99311fd952ba882d4ef6f3/general.py#L362-L370)
 * Example 28: [a-zA-Z0-9.-]+@[a-zA-Z-]+\.(com|net|edu) --> Fining all email addresses that are located in text --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/716bed781e4dd3572e99311fd952ba882d4ef6f3/general.py#L373-L381)
-
-
-#### Work in Progress ...
+* Example 29: https?://(www\.)?(\w+)(\.\w+) --> Finding all web addresses --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e5bd37a57da3623b9372556dd33a3fc120351f59/general.py#L396-L404)
+* Example 30: https?://(www\.)?(\w+)(\.\w+) --> Finding all web addresses and capturing information using groups--> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e5bd37a57da3623b9372556dd33a3fc120351f59/general.py#L407-L416)
+* Example 31: Reformatting the text using substitution --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e5bd37a57da3623b9372556dd33a3fc120351f59/general.py#L419-L424)
+* Example 32: Using findall to find all urls in text --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e5bd37a57da3623b9372556dd33a3fc120351f59/general.py#L427-L433)
+* Example 33: Using group in findall method --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e5bd37a57da3623b9372556dd33a3fc120351f59/general.py#L436-L442)
+* Example 34: Using match method in order to match the beginning of the string --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e5bd37a57da3623b9372556dd33a3fc120351f59/general.py#L445-L450)
+* Example 35: Using search method in order to search entire of the string --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e5bd37a57da3623b9372556dd33a3fc120351f59/general.py#L453-L458)
+* Example 36: Using ignore case flag --> [view source code](https://github.com/EverLookNeverSee/regex_nutshell/blob/e5bd37a57da3623b9372556dd33a3fc120351f59/general.py#L461-L466)
