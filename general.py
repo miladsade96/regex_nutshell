@@ -385,3 +385,14 @@ for match in matches:
 
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Example 29: Fining all urls that are located in text.
+print("Example 29: Fining all urls that are located in text.")
+pattern = re.compile(r'https?://(www\.)?(\w+)(\.\w+)')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"Found characters in text: {text_to_search[match.start():match.end()]}")
+
+print("*" * 65)
+# ----------------------------------------------------------------------------------
