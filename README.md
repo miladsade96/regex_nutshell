@@ -1,5 +1,5 @@
-# Regex_Nutshell
-Python Regex In a Nutshell
+![logo](logo.png)  
+## Python Regex In a Nutshell
 
 ### Author:
 Milad Sadeghi DM - [EverLookneverSee@GitHub](https://elns.info)
