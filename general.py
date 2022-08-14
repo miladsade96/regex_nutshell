@@ -396,3 +396,15 @@ for match in matches:
 
 print("*" * 65)
 # ----------------------------------------------------------------------------------
+
+# Example 30: Fining all urls that are located in text and capture information using groups.
+print("Example 30: Fining all urls that are located in text and capture information using groups.")
+pattern = re.compile(r'https?://(www\.)?(\w+)(\.\w+)')
+matches = pattern.finditer(text_to_search)
+for match in matches:
+    print(f"Match span indexes: {match.span()},   "
+          f"group_0: {match.group(0)}     group_1: {match.group(1)}     group_2: {match.group(2)}"
+          f"     group_3: {match.group(3)}")
+
+print("*" * 65)
+# ----------------------------------------------------------------------------------
